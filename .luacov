@@ -1,0 +1,21 @@
+-- Write coverage stats here (auto-created)
+statsfile = ".luacov.stats.out"
+
+-- Default text report
+reportfile = "coverage/luacov.report.out"
+
+-- Only measure your plugin’s Lua
+include = {
+  "lua/",
+}
+
+-- Ignore tests and runtime helpers
+exclude = {
+  "spec/",
+  "tests/",
+  "plugin/",     -- if you keep bootstrap helpers here
+  ".tests/",     -- your local deps folder
+}
+
+-- Generate a report right after the run finishes (optional)
+runreport = false
